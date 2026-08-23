@@ -43,6 +43,9 @@ Overall, Air India averages cheaper economy fares (₹7,387 vs ₹7,885) and che
 **3. More stops = meaningfully higher price, not lower.**
 Non-stop is the cheapest option in both classes. Economy: non-stop ₹4,153 → 1-stop ₹7,234 (+74%) → 2+ stops ₹10,439 (+151%). Business shows the same pattern, roughly doubling to tripling from non-stop to 2+ stops.
 
+**4. Layover city affects price, even after controlling for class — though the gap narrows a lot once you do.**
+Economy fares via Kolhapur (₹6,141) and Indore (₹6,209) are consistently the cheapest layover routes, while Delhi (₹14,726) and Vishakhapatnam (₹21,986) are the most expensive — roughly a 3.5x spread within the same class alone. The same pattern holds in business class. This dataset can't explain *why* (route distance, hub connectivity, etc. aren't captured), so this is reported as an observed pattern rather than a causal claim. A few cities (Gaya, Lucknow, Kolkata, Nanded) have very small samples (3-14 rows) and are noted as low-confidence.
+
 *(Q2 findings to be added)*
 
 ## Tools Used
@@ -52,7 +55,7 @@ Python, pandas, matplotlib/seaborn, Jupyter Notebook
 ## How to Run
 
 \`\`\`bash
-git clone [repo-url]
+git clone [[repo-url](https://github.com/PranavSivanesh/Indian-Flights-Price-Analysis)]
 cd indian-flight-price-analysis
 pip install -r requirements.txt
 jupyter notebook notebooks/analysis.ipynb
